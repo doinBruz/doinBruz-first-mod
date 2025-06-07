@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item trippa_snippa = registerItem("trippa_snippa", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DoinbruzFirstMod.MOD_ID, "trippa_snippa")))));
+    public static final Item TRIPPA_SNIPPA = registerItem("trippa_snippa", new Item(new Item.Settings().food(ModFoodComponents.TRIPPA_SNIPPA_FOOD_COMPONENT,ModFoodComponents.TRIPPA_SNIPPA_CONSUMABLE_COMPONENT).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(DoinbruzFirstMod.MOD_ID, "trippa_snippa")))));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(DoinbruzFirstMod.MOD_ID, name), item);
     }
@@ -20,7 +20,7 @@ public class ModItems {
             DoinbruzFirstMod.LOGGER.info("Registering Mod Items for" + DoinbruzFirstMod.MOD_ID);
 
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-                entries.add(trippa_snippa);
+                entries.add(TRIPPA_SNIPPA);
             });
         
         }   
