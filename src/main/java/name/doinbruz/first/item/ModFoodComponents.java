@@ -24,5 +24,6 @@ public class ModFoodComponents {
         .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 5, 1), 1.0f))
         .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 5, 1), 1.0f))
         .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20 * 5, 1), 1.0f))
-        .build();
+        .build();        
 }
+

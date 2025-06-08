@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import name.doinbruz.first.item.ModItems;
+import name.doinbruz.first.sound.ModSounds;
 
 public class DoinbruzFirstMod implements ModInitializer {
 	public static final String MOD_ID = "doinbruz-first-mod";
@@ -22,5 +23,6 @@ public class DoinbruzFirstMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		LOGGER.info("Mod items registered for " + MOD_ID);
+		ModSounds.registerSounds();
 	}
 }

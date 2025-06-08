@@ -1,0 +1,11 @@
+{
+  "trippa_snippa_eat": {
+    "sounds": [
+      {
+        "subtitle": "doinbruz-first-mod:trippa_snippa_eat",
+        "name": "doinbruz-first-mod:trippa_snippa_eat",
+        "stream": true
+      }
+    ]
+  }
+}
